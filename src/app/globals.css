@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.btn{
+  @apply font-epilogue font-semibold flex items-center justify-center rounded-[80px]
+}
+.btnd{
+  @apply btn  py-[6px] px-[10px]  font-epilogue font-semibold text-xs
+}
+.title{
+  @apply font-Poppins font-black text-[24px] leading-[28.8px] text-[#25324B]  mb-3
+}
+.pstyles{
+  @apply font-epilogue font-normal text-base
+}
+.sub_title{
+  @apply font-epilogue font-bold text-base text-[#25324B]
+}
+.required_skill{
+  @apply font-epilogue  font-normal text-base text-[#4640DE] bg-[rgba(209,200,200,0.2)] py-[4px] px-[12px]
+}
+.custom{
+  @apply  text-[12px]  leading-5 py-[6px] px-[10px] h-full
+}
+
+.input{
+  @apply rounded-md border-1 border-[#D6DDEB] py-3 px-4 w-full mb-5
+}
+.label{
+  @apply block font-epilogue text-base font-semibold text-[#515B6F] mb-1
+}
+.error {
+  @apply text-red-500 text-base text-left
+}
+
+
+.custom-placeholder::placeholder {
+  @apply font-medium text-center font-epilogue text-[34px] leading-[54.4px] ;
+  
+} 
